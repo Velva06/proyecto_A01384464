@@ -1,9 +1,26 @@
-# Ejercicio - Hello World
+Diagrama UML:
 
-Este proyecto tiene la estructura básica para cualquier proyecto C++. 
-
-La carpeta contiene el código fuente y el archivo de construcción ```make```.
-
-La carpeta `build` contiene el codigo binario generado por el archivo de construcción ```make```.
-
-Consulta el archivo assignments/README.md para instrucciones sobre la compilación y ejecución del proyecto.
++-----------------------------+
+|          Unidad             |
++-----------------------------+
+| - vida: int                |
+| - salud: int               |
+| - ataque: int              |
+| - nivel: int               |
++-----------------------------+
+| + Unidad()                 |
+| + Unidad(vida, ataque, nivel) |
+| + getVida(): int           |
+| + getSalud(): int          |
+| + getAtaque(): int         |
+| + getNivel(): int          |
+| + setVida(v: int): void    |
+| + setSalud(s: int): void   |
+| + setAtaque(a: int): void  |
+| + setNivel(n: int): void   |
+| + calcularPorcentajeSalud(): int |
+| + mostrarBarraVida(): void |
+| + recibeAtaque(p: int): void     |
+| + atacar(obj: Unidad&): void     |
+| + imprimir(): void         |
++-----------------------------+
