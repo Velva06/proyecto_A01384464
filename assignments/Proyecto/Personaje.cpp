@@ -1,5 +1,5 @@
 //GEnera la implementación de la clase base Personaje
-//GEnera la implementación de la clase base Personaje
+
 #include "Personaje.hpp"
 #include <cstdlib>
 #include <ctime>
