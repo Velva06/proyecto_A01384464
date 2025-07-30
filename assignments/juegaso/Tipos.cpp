@@ -21,10 +21,10 @@ void Mago::usarUltima(Unidad& objetivo) {
     objetivo.recibirDanio(35);
 }
 
-Tanque::Tanque(string n) : Unidad(n, 150, 10, 3) {}
+Tanque::Tanque(string n) : Unidad(n, 150, 15, 3) {}
 void Tanque::usarUltima(Unidad&) {
     cout << nombre << " usa su ULTIMA habilidad: ¡Se cura!\n";
-    salud += 30;
+    salud += 15;
     if (salud > saludMax) salud = saludMax;
 }
 

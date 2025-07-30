@@ -8,9 +8,23 @@ Unidad::Unidad(string n, int hp, int atk, int cargaUlt)
 
 Unidad::~Unidad() {}
 
+void Unidad::mostrarInfo(int k){
+    cout << k << ". " << nombre;
+    cout << " - Vida: " << saludMax;
+    cout << ", daño c/ataque: " << ataque;
+    cout << ", Carga para la ulti: " << cargaMaxima << endl;
+}
+
+void Unidad::mostrarInfo(){
+    cout << nombre;
+    cout << " - Vida: " << saludMax;
+    cout << ", daño c/ataque: " << ataque;
+    cout << ", Carga uti: " << cargaMaxima << endl;
+}
+
 void Unidad::atacar(Unidad& objetivo) {
     cout << nombre << " ataca a " << objetivo.getNombre()
-         << " causando " << ataque << " de daño.\n";
+         << " causando " << ataque << " de daño.\n\n";
     objetivo.recibirDanio(ataque);
     recargarUltima();
 }

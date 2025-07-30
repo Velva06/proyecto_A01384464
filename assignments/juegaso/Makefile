@@ -14,13 +14,15 @@ CXX = g++
 CXXFLAGS = -std=c++11 -Wall
 
 # Enlace para consola (importante en MSYS2 UCRT64)
-LDFLAGS = -Wl,-subsystem,console
+
 
 # Regla por defecto
 all: $(TARGET)
+	@echo "Ejecutando $(TARGET):"
+	./$(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+	$(CXX) $(OBJS) -o $@ 
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@

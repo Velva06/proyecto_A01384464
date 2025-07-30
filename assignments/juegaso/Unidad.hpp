@@ -18,6 +18,8 @@ public:
     virtual void usarUltima(Unidad& objetivo) = 0;
     virtual void atacar(Unidad& objetivo);
     void recargarUltima();
+    void mostrarInfo(int k);
+    void mostrarInfo();
     void intentarUsarUltima(Unidad& objetivo);
     virtual void recibirDanio(int danio);
 
